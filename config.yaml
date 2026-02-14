@@ -1,0 +1,111 @@
+baseURL: "https://faraway1913.github.io/ZionWang.github.io/"
+title: "技术笔记与复盘"
+theme: "PaperMod"
+
+# 多语言配置（中文）
+defaultContentLanguage: "zh"
+defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
+
+# 网站参数
+params:
+  env: "production"
+  title: "技术笔记与复盘"
+  description: "嵌入式开发笔记、技术复盘与日常记录"
+  keywords: ["嵌入式", "C语言", "单片机", "RTOS", "电子技术"]
+
+  # 主页信息
+  homeInfoParams:
+    Title: "欢迎来到我的技术博客"
+    Content: |
+      这里记录我的嵌入式开发笔记、项目复盘和技术思考。
+
+      主要领域：
+      - 嵌入式C语言开发
+      - STM32/ESP32等单片机应用
+      - FreeRTOS/RT-Thread等实时操作系统
+      - 电子电路设计与调试
+      - 技术学习与成长复盘
+
+  # 社交链接（可选）
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/faraway1913"
+      title: "GitHub"
+    - name: "mail"
+      url: "mailto:your-email@example.com"
+      title: "发送邮件"
+
+  # 功能开关
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+
+  # 代码高亮
+  highlightjs: true
+  highlightjsstyle: "github"
+
+  # 评论系统（可选，需要时启用）
+  # comments: true
+  # utterances:
+  #   repo: "faraway1913/ZionWang.github.io"
+  #   issueTerm: "pathname"
+  #   label: "💬 评论"
+  #   theme: "github-light"
+
+# 菜单配置
+menu:
+  main:
+    - identifier: "posts"
+      name: "文章"
+      url: "/posts/"
+      weight: 1
+    - identifier: "tags"
+      name: "标签"
+      url: "/tags/"
+      weight: 2
+    - identifier: "categories"
+      name: "分类"
+      url: "/categories/"
+      weight: 3
+    - identifier: "about"
+      name: "关于"
+      url: "/about/"
+      weight: 4
+    - identifier: "search"
+      name: "搜索"
+      url: "/search/"
+      weight: 5
+    - identifier: "archives"
+      name: "归档"
+      url: "/archives/"
+      weight: 6
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# 分页设置（Hugo v0.128.0+）
+pagination:
+  pagerSize: 10
+  path: "page"
+
+# 语法高亮
+markup:
+  highlight:
+    noClasses: false
+    codeFences: true
+
+# 构建设置
+build:
+  buildStats: true
+  writeStats: true
+
+# 服务设置（本地开发）
+server:
+  port: 1313
