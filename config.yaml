@@ -1,4 +1,4 @@
-baseURL: "https://faraway1913.github.io/ZionWang.github.io/"
+baseURL: "https://faraway1913.github.io/"
 title: "技术笔记与复盘"
 theme: "PaperMod"
 
@@ -50,7 +50,7 @@ params:
   # 评论系统（可选，需要时启用）
   # comments: true
   # utterances:
-  #   repo: "faraway1913/ZionWang.github.io"
+  #   repo: "faraway1913/faraway1913.github.io"
   #   issueTerm: "pathname"
   #   label: "💬 评论"
   #   theme: "github-light"
