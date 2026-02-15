@@ -13,10 +13,10 @@ permissions:
   pages: write
   id-token: write
 
-# 只允许一个并发部署
+# 只允许一个并发部署，不取消进行中的
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   HUGO_VERSION: "0.155.3"
