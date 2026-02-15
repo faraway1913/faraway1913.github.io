@@ -286,7 +286,7 @@ hugo new posts/STM32-GPIO配置详解.md
 # ---
 # title: "STM32-GPIO配置详解"
 # date: 2026-02-15T16:30:00+08:00
-# draft: true
+# draft: false
 # tags: []
 # categories: []
 # summary: ""
@@ -350,7 +350,7 @@ hugo server -D
 
 ```bash
 # 1. 将文章状态改为发布
-# 编辑文章Front Matter：draft: true → draft: false
+# 编辑文章Front Matter：draft: false → draft: false
 
 # 2. 提交到Git
 git add .
